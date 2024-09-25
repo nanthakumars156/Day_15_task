@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call back hell</title>
+</head>
+<body>
+    <h1 id="countdown" style="display: flex;justify-content: center;font-size: 50px;background-color: black;color: whitesmoke;"></h1>
+    <script>
+        let count =10;
+        let timer =document.getElementById('countdown');
+        timer.innerText = count--;
+            setTimeout(()=>{
+                timer.innerText = count--;
+                setTimeout(()=>{
+                    timer.innerText = count--;
+                    setTimeout(()=>{
+                        timer.innerText = count--;
+                        setTimeout(()=>{
+                            timer.innerText = count--;
+                            setTimeout(()=>{
+                                timer.innerText = count--;
+                                setTimeout(()=>{
+                                    timer.innerText = count--;
+                                    setTimeout(()=>{
+                                        timer.innerText = count--;
+                                        setTimeout(()=>{
+                                            timer.innerText = count--;
+                                            setTimeout(()=>{
+                                                timer.innerText = count--;
+                                                setTimeout(()=>{
+                                                    timer.innerText = "Happy Independence Day";
+                                                    timer.style.backgroundColor="white";
+                                                    timer.style.color="orange";
+                                                    timer.style.border="10px solid"
+                                                    timer.style.borderColor="green";
+                                                },1000)  
+                                            },1000)
+                                        },1000)
+                                    },1000)
+                                },1000)
+                            },1000)
+                        },1000)
+                    },1000)
+                },1000)   
+            },1000)       
+    </script>
+</body>
+</html>
